@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FILC Rankings – Arcade Rolling Analytics</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Explore how FILC tracks scoring, performance tiers, and Rollmaster designations in international Arcade Rolling competition.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rankings – FILC</title>
+  <meta name="description" content="Learn how the global rankings in Arcade Rolling work, how Rollmaster designations are earned, and how scoring is calculated at the highest level of competition." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="header-container">
       <div class="logo-container">
-        <h1 class="logo"><span class="logo-icon">🎯</span><span>FILC</span></h1>
+        <h1 class="logo"><span class="logo-icon">🎯</span> <span>FILC</span></h1>
       </div>
-      <p class="subheader">Fédération Internationale de Lancer Ciblé — the original esport</p>
+      <p class="subheader">Fédération Internationale de Lancer Ciblé — The global association for Arcade Rolling</p>
     </div>
     <div class="container">
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="rules.html">Rules</a>
+        <a href="rules.html">Rules & Regulations</a>
         <a href="events.html">Events</a>
         <a href="rankings.html" class="active">Rankings</a>
+        <a href="filc-cup.html">FILC Cup</a>
+        <a href="news.html">News</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
@@ -29,73 +34,113 @@
 
   <div class="hero">
     <div class="container">
-      <h2>Understanding Rankings</h2>
-      <p>FILC does not publish a global player leaderboard. Instead, we maintain a dynamic analytics system used to rank players within sanctioned tours and national circuits, with a focus on performance, scoring consistency, and competitive tier.</p>
+      <h2>Understanding Global Rankings</h2>
+      <p>Arcade Rolling's competitive landscape is anchored by FILC's transparent global ranking system—built for performance, consistency, and clarity at every tier of play.</p>
     </div>
   </div>
 
   <main class="container">
-    <section>
-      <h3>Scoring Standards</h3>
-      <p>Arcade Rolling matches are scored out of 900 per frame. Matches are typically 10 frames, with the lowest score dropped—making the max possible match score 8100 (displayed as "810").</p>
-      <p>Scores are often written without the trailing zero (e.g., a 540 frame is notated as "54") for clarity in competition summaries. Tournament scorecards always use the full value.</p>
+    <section class="intro">
+      <h3>How Rankings Work</h3>
+      <p>The FILC World Rankings are updated weekly based on athlete performance in officially sanctioned events. Rankings reflect a player’s best 12 tournament results over a rolling 24-month period, with additional weight given to higher-tier competitions.</p>
+      <p>Only FILC-sanctioned events—Major Championships, Grand Prix, and Challenger Series—contribute to ranking points. Local or independent circuit results are not included unless formally recognized by a national federation.</p>
     </section>
 
-    <section>
-      <h3>Performance Tiers</h3>
-      <p>Elite competitors (Premier Division) average 500–600 per frame (50–60). Most competitive players score in the 300–450 range. Scores above 700 are exceptionally rare.</p>
+    <section class="scoring">
+      <h3>Points and Weighting</h3>
+      <p>Ranking points are awarded using the <strong>Simpson Point Scale</strong> based on final placement, competition tier, and scoring excellence:</p>
       <ul>
-        <li><strong>Premier Division:</strong> Top 100 players internationally</li>
-        <li><strong>Challenger Division:</strong> Ranked 101–250 globally</li>
-        <li><strong>Developmental Division:</strong> All other ranked professionals</li>
+        <li><strong>Major Championships:</strong> Weighted 150–200%</li>
+        <li><strong>Grand Prix Events:</strong> Weighted 100–125%</li>
+        <li><strong>Challenger Series:</strong> Weighted 50–75%</li>
       </ul>
+      <p>Bonus points are awarded for Perfect Frames, Diamond Rings (five 800+ frames in a row), and defeating higher-ranked players in match play.</p>
     </section>
 
-    <section>
-      <h3>Simpson Points & Ranking Calculations</h3>
-      <p>The world ranking system is based on Simpson Points, awarded based on event tier and finishing position. Points are calculated from a player's best 12 events over a rolling 24-month period. Grand Prix and Major events are weighted more heavily than Challenger events.</p>
+    <section class="rollmaster">
+      <h3>Rollmaster Status</h3>
+      <p>The title of <strong>Rollmaster</strong> is not a rank—it's a distinction. Awarded for exceptional achievement, it is the highest honor conferred by FILC and is recognized globally, regardless of a player’s current ranking.</p>
+      <p>To earn Rollmaster status, a player must meet one of the following:</p>
       <ul>
-        <li><strong>Major Championships:</strong> 150–200% weight</li>
-        <li><strong>Grand Prix Events:</strong> 100–125%</li>
-        <li><strong>Challenger Events:</strong> 50–75%</li>
+        <li>Win any FILC Major Championship</li>
+        <li>Record 3 or more Grand Prix victories</li>
+        <li>Achieve a certified Perfect Frame (900 points) in sanctioned competition</li>
       </ul>
-      <p>Bonus Simpson Points are awarded for Perfect Frames, Diamond Rings (5 consecutive 800+ games), and tournament-high frame scores.</p>
+      <p>Once earned, Rollmaster status is permanent and indicated by a distinctive gold stripe on all official jerseys and score displays.</p>
     </section>
 
-    <section>
-      <h3>Rollmaster Designation</h3>
-      <p>The title of <strong>Rollmaster</strong> is awarded to players who:</p>
+    <section class="analytics">
+      <h3>Performance Metrics</h3>
+      <p>FILC uses detailed analytics to support rankings integrity. In addition to raw scores, we track:</p>
       <ul>
-        <li>Win a FILC Major Championship</li>
-        <li>Achieve a Perfect Frame (900 points)</li>
-        <li>Win three or more Grand Prix events</li>
+        <li><strong>Consistency Index:</strong> Measures score deviation across frames</li>
+        <li><strong>Strike Frequency:</strong> Rate of 100-point or corner pocket hits</li>
+        <li><strong>Frame Efficiency:</strong> Points per ball ratio adjusted for lane rating</li>
+        <li><strong>Lane Difficulty Adjustment (LDA):</strong> A developing metric that accounts for verified lane conditions and history</li>
       </ul>
-      <p>This honor is permanent and does not expire. Each country maintains its own list of national Rollmasters. Some regional circuits or rival associations also maintain Rollmaster titles, resulting in occasional overlap or contention.</p>
+      <p>These metrics are not publicly used for rankings but appear in FILC’s internal data and at our analytics partner portal: <strong><em>SkeeballSavant</em></strong> (launching soon).</p>
     </section>
 
-    <section>
-      <h3>Analytics and Metrics</h3>
-      <p>FILC publishes limited advanced stats, but many federations and fans use deeper metrics to evaluate player performance:</p>
+    <section class="structure">
+      <h3>Ranking Tiers</h3>
+      <p>While all competitors earn points equally, they are grouped by tiers for seeding and invitations:</p>
       <ul>
-        <li><strong>Frame Average (FA):</strong> Mean score across all official frames</li>
-        <li><strong>Peak Frame:</strong> Highest single frame in competition</li>
-        <li><strong>Zero Rate:</strong> Percentage of rolls scoring zero (Zilch)</li>
-        <li><strong>Strike Rate:</strong> Frequency of foot faults or illegal deliveries</li>
-        <li><strong>Consistency Index:</strong> Standard deviation of frame scores across a match or season</li>
+        <li><strong>Premier Division:</strong> Top 100 players globally</li>
+        <li><strong>Challenger Division:</strong> Rankings 101–250</li>
+        <li><strong>Development Division:</strong> All others with active FILC competition status</li>
       </ul>
-      <p>Advanced analytics platforms like <em>Savant.Roll</em> and <em>FrameLab</em> provide tools for deeper match analysis, including opponent-adjusted scores and lane condition factors.</p>
+      <p>Age-based categories (U14, U18, U23, 50+, 65+) also maintain parallel rankings for regional and exhibition events.</p>
     </section>
+
+    <div class="cta">
+      <h3>Want to Climb the Ranks?</h3>
+      <p>Only performances in FILC-sanctioned tournaments count toward official standings. Check the calendar, join a federation, and take your shot.</p>
+      <a href="events.html" class="button">View Event Calendar</a>
+      <a href="rules.html" class="button secondary">Read the Official Rulebook</a>
+    </div>
   </main>
 
   <footer>
     <div class="footer-container">
       <div>
         <div class="footer-logo">🎯 FILC</div>
-        <p>Fédération Internationale de Lancer Ciblé<br>Registered Office: Tallinn, Estonia</p>
+        <p>Fédération Internationale de Lancer Ciblé<br>
+        Registered Headquarters<br>
+        Narva mnt 5, 10117 Tallinn<br>
+        Estonia (EU)</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-links-column">
+          <h5>Organization</h5>
+          <ul>
+            <li><a href="about.html">About FILC</a></li>
+            <li><a href="governance.html">Governance</a></li>
+            <li><a href="committees.html">Committees</a></li>
+            <li><a href="history.html">History</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-column">
+          <h5>Competitions</h5>
+          <ul>
+            <li><a href="simpson-cup.html">Simpson Cup</a></li>
+            <li><a href="lausanne-open.html">Lausanne Open</a></li>
+            <li><a href="global-championship.html">Global Championship</a></li>
+            <li><a href="calendar.html">Event Calendar</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-column">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="rules.html">Official Rulebook</a></li>
+            <li><a href="rankings.html" class="active">World Rankings</a></li>
+            <li><a href="federations.html">National Federations</a></li>
+            <li><a href="certification.html">Equipment Certification</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="copyright">
-      &copy; 2025 FILC. All rights reserved.
+      <p>© 2025 Fédération Internationale de Lancer Ciblé. All rights reserved.</p>
     </div>
   </footer>
 </body>
